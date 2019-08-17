@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="table-responsive">
+    <table class="table">
+      <tbody>
+      <tr>
+        <td class="text-label">ID:</td>
+        <td class="text-body">{{payment.id}}</td>
+        <td class="text-label">First 6 digits:</td>
+        <td class="text-body">{{payment.card.firstSixDigits}} XXXX</td>
+      </tr>
+      <tr>
+        <td class="text-label">Tracking Code:</td>
+        <td class="text-body">{{payment.trackingCode}}</td>
+        <td class="text-label">Expiry month:</td>
+        <td class="text-body">{{payment.card.expiryMonth}}</td>
+      </tr>
+      <tr>
+        <td class="text-label">Brand ID:</td>
+        <td class="text-body">{{payment.brandId}}</td>
+        <td class="text-label">Expiry year:</td>
+        <td class="text-body">{{payment.card.expiryYear}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

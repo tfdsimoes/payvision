@@ -1,0 +1,35 @@
+/* Container */
+.container{
+  min-height:100%;
+  min-width:100%;
+  background: #e8ebf3;
+}
+
+/* Table */
+.table{
+  background: #f6f7fb;
+}
+
+.table-header{
+  font-family: "SourceSansPro", Semibold;
+  font-size: 14px;
+  color: #213d8f;
+}
+
+.table-body{
+  font-family: "SourceSansPro", Regular;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+/* Select box */
+.custom-select-sm{
+  color: #213d8f;
+  background: #f6f7fb;
+}
+
+/* Button search */
+.btn-sm{
+  color: #f6f7fb;
+  background: #8ec03f;
+}

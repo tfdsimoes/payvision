@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="float-right">
+    <select class="custom-select-sm" (change)="changeAction($event)">
+      <option value="">Transaction type</option>
+      <option *ngFor="let action of actions">{{action}}</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;
+    <select class="custom-select-sm" (change)="changeCurrency($event)">
+      <option value="">Currency</option>
+      <option *ngFor="let currency of currencies">{{currency}}</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn-sm" (click)="loadPayments()">Search</button>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="table-header">
+      <tr>
+        <th>Name</th>
+        <th>Brand</th>
+        <th>Last 4 digits</th>
+        <th>Transaction type</th>
+        <th>Amount</th>
+        <th>Currency</th>
+      </tr>
+      </thead>
+      <tbody class="table-body">
+      <tr *ngFor="let payment of payments" (click)="showCardDetails(payment)">
+        <td>{{payment.card.holderName}}</td>
+        <td>{{payment.brandName}}</td>
+        <td>xxxx {{payment.card.lastFourDigits}}</td>
+        <td>{{payment.action}}</td>
+        <td>{{payment.amount}}</td>
+        <td>{{payment.currencyCode}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
