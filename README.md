@@ -71,6 +71,7 @@ Not implemented
 ### NG
 To run using ng go to the folder src/main/webapp and run the command:
 ```
+npm install
 ng serve -o
 ```
 These will start the app and open a web browser with the application.
